@@ -110,6 +110,23 @@ This document tracks the architectural and implementation decisions made through
 
 ---
 
+## 11. Pipeline Mode: Per-Query vs Batch (Pooled) + Report Storage
+
+**Decision:** The CLI uses a **per-query pipeline** — each query runs its own full cycle (search → fetch → parse → index → retrieve → summarize). Reports are saved as timestamped JSON files (`reports/report_YYYYMMDD_HHMMSS.json`). The notebook uses a **batch (pooled) approach** — all queries are searched upfront, articles are merged and deduplicated, then the retriever searches the mixed pool.
+
+**Why (per-query):** When you pool articles from multiple unrelated queries (e.g., "mRNA vaccines" + "protein folding" + "monoclonal antibodies"), the ChromaDB index contains a mix of topics. Semantic search over this mixed pool can return articles that are highly similar to the query *within the pool* but not necessarily the best match globally. A query about "mRNA vaccine safety" might retrieve a protein-folding paper that happens to mention vaccines in passing, because that paper is the "least bad" match among the available options. Per-query keeps the index topic-focused: only articles relevant to that query are indexed, so retrieval is done against a homogeneous set. The top-K results are more likely to be genuinely relevant.
+
+**Why (batch in notebook):** The notebook is for demonstration and exploration. Running three fixed test queries once, pooling results, and indexing them all is faster for a single run — you pay the cost of search, fetch, parse, and index once, then run retrieval for each query. Good for quick comparisons and for keeping the notebook simple.
+
+**Tradeoff:**
+- **Per-query is slower** — each new query triggers a full pipeline: E-utilities call, S3 fetches, XML parsing, ChromaDB index build (including embedding generation), retrieval, and T5 summarization. For a pool of 50 articles, that's ~50 S3 requests, ~50 XML parses, and embedding of 50 documents. If the user runs 5 queries, that's 5× the work.
+- **Per-query is more accurate** — no cross-topic contamination. The retriever only sees articles from that query's search, so the ranking reflects relevance within a coherent corpus.
+- **Batch is faster** — one search/fetch/parse/index for multiple queries. But accuracy can suffer when the pool spans unrelated topics.
+- **Report storage:** Timestamped JSON per run (`report_YYYYMMDD_HHMMSS.json`) keeps each run separate and avoids overwriting. No need for a database or schema. The batch notebook could save to `all_reports.json` or one file per query; the per-query CLI naturally produces one file per run. Both are simple and human-readable.
+
+**When to use which:** Use per-query (CLI) when you care about accuracy and run a few focused queries. Use batch (notebook) when you want to compare multiple queries quickly or demo the pipeline on a fixed set.
+
+---
 
 ## Summary Table
 
@@ -126,3 +143,5 @@ This document tracks the architectural and implementation decisions made through
 | Summarization model | t5-small | bart-large-cnn | CPU speed, fast iteration |
 | Keywords | XML-first + fallback | Pure extraction | Author keywords are highest quality |
 | Dev environment | VS Code + Jupyter ext | Separate JupyterLab | Single tool, no context-switching |
+| Pipeline mode | Per-query (CLI) | Batch pooled (notebook) | Accuracy over speed for CLI |
+| Report storage | Timestamped JSON per run | Single/batch JSON | Simple, no overwrite, human-readable |

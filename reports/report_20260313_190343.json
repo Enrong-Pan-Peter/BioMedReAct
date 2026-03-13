@@ -1,0 +1,127 @@
+{
+  "query": "transformer models for protein folding",
+  "timestamp": "2026-03-13T19:03:43.696605",
+  "num_results": 5,
+  "articles": [
+    {
+      "pmc_id": "",
+      "pmid": "41326937",
+      "title": "Advantages and Limitations of AlphaFold in Structural Biology: Insights from Recent Studies",
+      "authors": [
+        "Mandarina Qing Cheng Li",
+        "Sihan Wang",
+        "Shi-Ruei Lin",
+        "Li Eric Ngok Ting",
+        "Zhi-Hong Wan",
+        "Guodong Xie",
+        "Jane Zhang"
+      ],
+      "journal": "The Protein Journal",
+      "pub_date": "2025-12-01",
+      "summary": "this narrative review synthesizes applications reported in the 2022\u20132025 literature. representative examples include modeling of SARS-CoV-2 spike and nucleocapsid proteins in virology, assisting cryo-EM interpretation of bacterial ribosomal and membrane-protein complexes in microbiology, and refining conformational hypotheses for human GPCRs.",
+      "keywords": [
+        "Cryo-Electron microscopy (cryo-EM)",
+        "Cryo-Electron tomography (cryo-ET)",
+        "AlphaFold/AlphaFold2",
+        "Integrative structural biology",
+        "Protein\u2013protein interactions",
+        "Subtomogram averaging",
+        "Model validation"
+      ],
+      "relevance_score": 0.4806
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41750265",
+      "title": "MAKA-Map: Real-Valued Distance Prediction for Protein Folding Mechanisms via a Hybrid Neural Framework Integrating the Mamba and Kolmogorov\u2013Arnold Networks",
+      "authors": [
+        "Benzhi Dong",
+        "Yumeng Hua",
+        "Chang Hou",
+        "Dali Xu",
+        "Guohua Wang"
+      ],
+      "journal": "Biomolecules",
+      "pub_date": "2026-01-27",
+      "summary": "real-valued distance maps provide essential spatial information for understanding protein folding mechanisms and guiding downstream applications such as function annotation, drug discovery, and structural modeling. the proposed framework integrates a selective state space model to effectively model global interactions and incorporates the Kolmogorov\u2013Arnold Network (KAN)",
+      "keywords": [
+        "protein",
+        "real-valued distance prediction",
+        "Mamba",
+        "KAN"
+      ],
+      "relevance_score": 0.4571
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41690307",
+      "title": "Efficient global accuracy estimation for protein complex structural models using multi-view representation learning",
+      "authors": [
+        "Dong Liu",
+        "Xuanfeng Zhao",
+        "Tianyou Zhang",
+        "Lei Xie",
+        "Enjia Ye",
+        "Fang Liang",
+        "Haodong Wang",
+        "Guijun Zhang"
+      ],
+      "journal": "Cell Reports Methods",
+      "pub_date": "2026-02-23",
+      "summary": "MViewEMA is a single-model EMA method that leverages multi-view representation learning framework to integrate residue-residue interaction features from micro-environment, meso, and macro. the method achieved top performance in model selection tracks during the CASP16 blind test, demonstrating its potential to enhance the accuracy of complex structure prediction when integrated into modern frameworks such as AlphaFold-Multimer and DiffDock-PP.",
+      "keywords": [
+        "protein structure prediction",
+        "estimation of model accuracy",
+        "protein complex model accuracy estimation",
+        "single-model methods",
+        "deep learning",
+        "multi-view representation learning"
+      ],
+      "relevance_score": 0.4143
+    },
+    {
+      "pmc_id": "",
+      "pmid": "40544328",
+      "title": "Recent advances in machine learning and coarse-grained potentials for biomolecular simulations",
+      "authors": [
+        "Adolfo B. Poma",
+        "Alejandra Hinostroza Caldas",
+        "Luis F. Cofas-Vargas",
+        "Michael S. Jones",
+        "Andrew L. Ferguson",
+        "Leonardo Medrano Sandonas"
+      ],
+      "journal": "Biophysical Journal",
+      "pub_date": "2026-01-20",
+      "summary": "biomolecular simulations face inherent challenges due to multiscale nature of biological processes. applications ranging from drug discovery to the molecular characterization of virus-host interactions are a key challenge in the study of the complex dynamics in biological systems.",
+      "keywords": [
+        "Biomolecular",
+        "Despite",
+        "All",
+        "In",
+        "However"
+      ],
+      "relevance_score": 0.4065
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41757224",
+      "title": "Connecting the dots: deep learning-based automated model building methods in cryo-EM",
+      "authors": [
+        "Harsh Bansia",
+        "Amedee des Georges"
+      ],
+      "journal": "Frontiers in Molecular Biosciences",
+      "pub_date": "2026-02-11",
+      "summary": "cryo-EM density maps enable atomic model building, but lower-resolution maps can still reveal secondary structures, folds, and domains. deep learning offers powerful new tools to automate and accelerate this process, assessing their impact on streamlining structure determination.",
+      "keywords": [
+        "drug-discovery",
+        "model building",
+        "structural biology",
+        "cryo-EM atomic models",
+        "deep neural network"
+      ],
+      "relevance_score": 0.404
+    }
+  ]
+}

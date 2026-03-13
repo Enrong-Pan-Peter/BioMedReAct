@@ -1,0 +1,176 @@
+{
+  "query": "reinforcement learning",
+  "timestamp": "2026-03-13T19:06:22.091521",
+  "num_results": 7,
+  "articles": [
+    {
+      "pmc_id": "",
+      "pmid": "41639093",
+      "title": "Deep learning drives autonomous molecular reactions with single-bond selectivity in tetra-brominated porphyrins on Au(111)",
+      "authors": [
+        "Zhiwen Zhu",
+        "Qi Huang",
+        "Tairan Yang",
+        "Hao Jiang",
+        "Shaoxuan Yuan",
+        "Juan Xiang",
+        "Liangliang Cai",
+        "Qiang Sun"
+      ],
+      "journal": "Nature Communications",
+      "pub_date": "2026-02-04",
+      "summary": "the approach extends beyond single-bond events, enabling programmed multi-step sequences including four distinct pathways with high fidelity. the platform provides a generalizable framework for on-surface synthesis, where adaptive agents orchestrate molecular transformations with an level of precision and scalability unattainable by manual approaches.",
+      "keywords": [
+        "Scanning probe microscopy",
+        "Synthesis and processing"
+      ],
+      "relevance_score": 0.2851
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41814571",
+      "title": "Harnessing Uncertainty: Improvisation as a Model for Rapid Behavioral Expansion",
+      "authors": [
+        "Julien Laroche",
+        "Alessandro D'Ausilio"
+      ],
+      "journal": "Cognitive Science",
+      "pub_date": "2026-03-11",
+      "summary": "in neuroscience, neural uncertainty is increasingly recognized as a hallmark of cognition and volition. cultivating the models\u2019 inherent indeterminism can disrupt their biased attraction toward users\u2019 expectations, boosting the openendedness of humanmodel interactions and fostering cognitive emancipation.",
+      "keywords": [
+        "Uncertainty",
+        "Improvisation",
+        "Creativity",
+        "Collective behavior",
+        "Coordination dynamics",
+        "Interaction dynamics"
+      ],
+      "relevance_score": 0.2629
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41792195",
+      "title": "Deep recurrent neural networks for water hammer transient prediction and dynamic protection optimization in long distance pipelines",
+      "authors": [
+        "Ru Dong",
+        "Juan Du",
+        "Cong Liu"
+      ],
+      "journal": "Scientific Reports",
+      "pub_date": "2026-03-06",
+      "summary": "water hammer phenomena pose significant threats to the operational safety and structural integrity of long-distance water transmission pipeline systems. the intelligent decision framework provides water utilities with an adaptive tool for enhancing pipeline safety, minimizing infrastructure damage risks, and optimizing protection resource allocation in complex hydraulic systems.",
+      "keywords": [
+        "Water hammer",
+        "Deep learning",
+        "LSTM networks",
+        "Multi-sensor data fusion",
+        "Reinforcement learning",
+        "Pipeline protection",
+        "Energy science and technology",
+        "Engineering",
+        "Mathematics and computing"
+      ],
+      "relevance_score": 0.2335
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41792198",
+      "title": "Multi-objective optimization of hybrid laser cleaning process parameters for carbon deposits based on bayesian-SVR and NSGA-II",
+      "authors": [
+        "Yishun Su",
+        "Yong Hu",
+        "Qunli Zhang",
+        "Zhehe Yao",
+        "Zhijun Chen",
+        "Yanyi Yin",
+        "Zhenzhen Yang",
+        "Jianhua Yao"
+      ],
+      "journal": "Scientific Reports",
+      "pub_date": "2026-03-06",
+      "summary": "hybrid laser cleaning combines continuous-wave (CW) laser preheating with pulsed laser ablation to remove piston crown carbon deposits. conventional tuning cannot simultaneously minimize surface roughness (Sa) and carbon residue rate (RC)",
+      "keywords": [
+        "Laser cleaning",
+        "Support vector regression",
+        "Bayesian optimization",
+        "Non-dominated sorting genetic algorithm II (NSGA-II)",
+        "Multi-objective optimization",
+        "Energy science and technology",
+        "Engineering",
+        "Mathematics and computing"
+      ],
+      "relevance_score": 0.2283
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41803198",
+      "title": "AI-driven fault detection and classification in photovoltaic systems using deep learning techniques",
+      "authors": [
+        "Fatma M. Talaat",
+        "Mohamed Salem",
+        "Warda M. Shaban"
+      ],
+      "journal": "Scientific Reports",
+      "pub_date": "2026-03-10",
+      "summary": "PVDefectNet is a deep learning-based fault detector and classifier of the PV systems. the proposed solution uses data augmentation techniques to enhance its resistance to operating in different operating environments.",
+      "keywords": [
+        "Photovoltaic systems",
+        "Fault detection",
+        "Renewable energy",
+        "AI in solar power",
+        "Energy science and technology",
+        "Engineering",
+        "Mathematics and computing"
+      ],
+      "relevance_score": 0.2059
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41814465",
+      "title": "The Development of Selective Attention in Children's Emotion Reasoning",
+      "authors": [
+        "Andrea G. Stein",
+        "Seth D. Pollak"
+      ],
+      "journal": "Developmental Science",
+      "pub_date": "2026-03-11",
+      "summary": "children learn to classify an alien's emotional displays into two categories. categories could be learned via two different strategies: distributing attention across all possible emotionrelated cues or selectively attending to the most predictive cu. selective attention use increased by an average of 5 percentage points per year across this age range, characterized by decreasing strategic variability across development.",
+      "keywords": [
+        "distributed attention",
+        "emotion learning",
+        "emotion reasoning",
+        "middle childhood",
+        "selective attention",
+        "strategic variability"
+      ],
+      "relevance_score": 0.205
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41803434",
+      "title": "Utilization of machine learning to identify lower extremity biomechanical predictors of rupture in a validated cadaveric model of ACL injury",
+      "authors": [
+        "Parsa Khorrami",
+        "Taofeek Braimoh",
+        "Dayane Alfenas Reis",
+        "Nathaniel A. Bates",
+        "Nathan D. Schilaty",
+        "John Michael Templeton"
+      ],
+      "journal": "Scientific Reports",
+      "pub_date": "2026-03-09",
+      "summary": "study presents a detailed evaluation of machine learning techniques for the prediction of anterior cruciate ligament (ACL) injuries. ML models were trained and tested on four datasets: 53-feature (Binary) ACL Rupture Biomechanical and Demographic (ARBD/BARDB)",
+      "keywords": [
+        "Anterior cruciate ligament (ACL)",
+        "Machine learning",
+        "ACL injury prediction",
+        "Computational biology and bioinformatics",
+        "Diseases",
+        "Health care",
+        "Medical research",
+        "Risk factors"
+      ],
+      "relevance_score": 0.1895
+    }
+  ]
+}

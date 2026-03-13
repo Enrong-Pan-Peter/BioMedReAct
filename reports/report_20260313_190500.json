@@ -1,0 +1,114 @@
+{
+  "query": "arthritis",
+  "timestamp": "2026-03-13T19:04:59.958496",
+  "num_results": 4,
+  "articles": [
+    {
+      "pmc_id": "",
+      "pmid": "41813656",
+      "title": "Defining subcellular synovial responses in TMJ osteoarthritis onset via mechanical stress and articular disk derangement models",
+      "authors": [
+        "Kazuhiro Shibusaka",
+        "Soichiro Negishi",
+        "Asuka Terashima",
+        "Miki Maemura",
+        "Hiroshi Yoshida",
+        "Masahiro Hosonuma",
+        "Nobuhiro Sakai",
+        "Young Kwan Kim",
+        "Yutaka Suzuki",
+        "Hiroyuki Okada",
+        "Fumiko Yano"
+      ],
+      "journal": "International Journal of Oral Science",
+      "pub_date": "2026-03-12",
+      "summary": "Temporomandibular joint osteoarthritis (TMJ-OA), the most common degenerative disease of the TMJ, is influenced by various adaptive, inflammatory, and mechanical stressors. a transcriptomic approach combines subcellular spatial transcriptomics and single-cell RNA sequencing in murine models of mechanical stresses and articular disk derangement. cell type\u2013and cluster\u2013specific catabolic changes were observed under these stress conditions,",
+      "keywords": [
+        "Connective tissue diseases",
+        "Mechanisms of disease",
+        "Trauma"
+      ],
+      "relevance_score": 0.4174
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41721141",
+      "title": "Integration of gold standard arthroscopy, MRI and synovial histopathology outcomes for enhancing early knee osteoarthritis diagnosis",
+      "authors": [
+        "Gabriel Herrero-Beaumont",
+        "Javier Fern\u00e1ndez-Jara",
+        "Javier Llorca",
+        "Irene Sanchez-Platero",
+        "Mar\u00eda Garmendia",
+        "Juan Ignacio Masa",
+        "\u00c1lvaro Au\u00f1\u00f3n",
+        "Patricia Rodriguez-Zamorano",
+        "Ar\u00e1nzazu Mediero",
+        "Felipe L\u00f3pez-Oliva",
+        "Nasser Al-Daghri",
+        "Nicola Veronese",
+        "Jean-Yves Reginster",
+        "Raquel Largo"
+      ],
+      "journal": "Aging Clinical and Experimental Research",
+      "pub_date": "2026-02-20",
+      "summary": "arthroscopy, MRI, and synovial histopathology were used to characterize early KOA symptoms. the study included 130 adults (> 18 years) with knee pain lasting > 3 months and inconclusive clinical and radiographic findings. isolated minor findings (small focal cartilage defects or mild meniscal changes without structural disruption)",
+      "keywords": [
+        "Knee osteoarthritis",
+        "Synovitis",
+        "Histopathology",
+        "Arthroscopy",
+        "Early knee osteoarthritis"
+      ],
+      "relevance_score": 0.4005
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41664047",
+      "title": "Long-term functional and clinical outcomes of intraarticular double-cross-linked high molecular weight hyaluronic acid (Crespine Gel Plus) injection in knee osteoarthritis: a one year prospective study",
+      "authors": [
+        "Vijaya Kumar L. Suppan",
+        "Mei Mei Tew",
+        "Hrishinilaavenn Muthusamy",
+        "Jin May Voon",
+        "Nik Abdul Muhaimin Nik Ramli",
+        "Aaron Siow Jon Phuah",
+        "Dinesh Murugaiah"
+      ],
+      "journal": "BMC Musculoskeletal Disorders",
+      "pub_date": "2026-02-09",
+      "summary": "double cross-linked, high-molecular-weight hyaluronic acid (HMWHA; Crespine Gel Plus) may extend symptom relief beyond the typical 3 to 6 month horizon. robust 12-month data remain limited, but short- and long-term outcomes over 12 months following a single mL intra-articular injection in routine care. results were KOOS4 (primary; 0\u2013100, higher = better",
+      "keywords": [
+        "Osteoarthritis, Knee",
+        "Hyaluronic Acid",
+        "Injections, Intra-Articular",
+        "Patient-Reported Outcome Measures",
+        "Treatment Outcome"
+      ],
+      "relevance_score": 0.3539
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41784857",
+      "title": "Metabolic dysfunction-associated fatty liver disease and risk of knee osteoarthritis: A prospective cohort study",
+      "authors": [
+        "Yongchun Zhang",
+        "Lina Jiang",
+        "Xiaowen Teng",
+        "Chenxi Xia",
+        "Haofeng Zhou",
+        "Fang Wang"
+      ],
+      "journal": "Clinical and Experimental Medicine",
+      "pub_date": "2026-03-05",
+      "summary": "fatty liver disease (MAFLD) is a systemic metabolic disorder that influences extra-hepatic conditions. cross-sectional studies link the disease to KOA, but prospective evidence remains limited. this study included 303,604 participants without baseline osteoarthritis.",
+      "keywords": [
+        "Metabolic dysfunction-associated fatty liver disease",
+        "Knee osteoarthritis",
+        "Systemic inflammation",
+        "Cohort study"
+      ],
+      "relevance_score": 0.346
+    }
+  ]
+}
