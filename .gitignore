@@ -1,2 +1,9 @@
 # Cursor
 .cursor/
+
+# S3 XML cache
+.cache/
+
+# Python
+__pycache__/
+*.pyc

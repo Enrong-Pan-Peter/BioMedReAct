@@ -1,0 +1,154 @@
+{
+  "query": "biomedical computing",
+  "timestamp": "2026-03-14T21:43:52.948388",
+  "num_results": 6,
+  "articles": [
+    {
+      "pmc_id": "",
+      "pmid": "41823858",
+      "title": "A Physics-Aware Diffusion Framework for Robust ECG Synthesis Using Mesoscopic Lattice Boltzmann Constraints",
+      "authors": [
+        "Xi Qiu",
+        "Hailin Cao",
+        "Li Yang",
+        "Hui Wang"
+      ],
+      "journal": "Biology",
+      "pub_date": "2026-03-05",
+      "summary": "simple summarySmartwatches and fitness bands track our pulse using simple optical sensors. but diagnosing true heart disease requires an electrical electrocardiogram (ECG) typically recorded in hospitals with sticky patches and wires, while artificial intelligence (AI) has been used to translate simple wrist pulse data into clinical ECGs. instead of just learning from data patterns, we taught the AI the actual physical laws of how blood pumps from the heart and flows through blood vessels.",
+      "keywords": [
+        "hemodynamics",
+        "photoplethysmography",
+        "electrocardiography",
+        "physics-informed deep learning",
+        "cardiovascular monitoring"
+      ],
+      "relevance_score": 0.4757
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41816805",
+      "title": "NeuroMorphFusion: A Neuro-Inspired Hybrid Learning Framework for Interpretable Deep Lesion Detection \nin IoT-Enabled Healthcare Systems",
+      "authors": [
+        "Roseline Oluwaseun Ogundokun",
+        "Rotimi-Williams Bello",
+        "Pius Adewale Owolawi",
+        "Etienne A. van Wyk",
+        "Chunling Tu"
+      ],
+      "journal": "Technology in Cancer Research & Treatment",
+      "pub_date": "2026-03-12",
+      "summary": "neuroMorphFusion combines biologically plausible learning with mathematical modelling. it integrates a lightweight ResNet18 backbone to capture temporal dynamics and morphological attention mechanism to emphasize structure-relevant regions in CT scans. the architecture employs semi-supervised reinforcement learning strategy, where pseudo-label accuracy and overlap between Grad-CAM visualizations and expert annotations define the reward.",
+      "keywords": [
+        "NeuroMorphFusion",
+        "lesion detection",
+        "grad-CAM",
+        "CT imaging",
+        "morphological attention",
+        "internet of medical things",
+        "spiking neural network"
+      ],
+      "relevance_score": 0.3812
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41823837",
+      "title": "Deep Learning-Enabled Multi-Omics Integration: A New Frontier in Precise Drug Target Discovery",
+      "authors": [
+        "Yufei Ren",
+        "Haotian Bai",
+        "Jihan Wang",
+        "Yanning Yang",
+        "Yangyang Wang"
+      ],
+      "journal": "Biology",
+      "pub_date": "2026-03-02",
+      "summary": "traditional analytical methods focusing on a single biological layer often fail to capture the systemic complexity of human diseases. this review summarizes advances in computational frameworks that integrate diverse biological data, including genes, proteins, and metabolites, to facilitate drug target discovery.",
+      "keywords": [
+        "deep learning",
+        "multi-omics integration",
+        "drug target discovery",
+        "precision medicine"
+      ],
+      "relevance_score": 0.3393
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41823823",
+      "title": "Preclinical HistoBench: A Pilot Benchmark Dataset for Evaluating Large Language Models on Preclinical Histopathological Classification",
+      "authors": [
+        "Avan Kader",
+        "Marie-Luise H. H. Ranner-Hafferl",
+        "Felix Reuter",
+        "Miriam L. Fichtner",
+        "Marcus R. Makowski",
+        "Keno K. Bressem",
+        "Lisa C. Adams"
+      ],
+      "journal": "Biology",
+      "pub_date": "2026-02-27",
+      "summary": "three language models (GPT-4.1, GPT-4o-mini, and Llama 3.2) were assessed using 378 histological samples across four classification dimensions. this included species identification (mouse, rabbit, rat), organ recognition (kidney, liver, prostate spleen) and preparation technique determination (frozen versus paraffin-embedded)",
+      "keywords": [
+        "benchmark dataset",
+        "preclinical histopathology",
+        "large language models",
+        "multi-task classification",
+        "digital animal pathology"
+      ],
+      "relevance_score": 0.203
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41821121",
+      "title": "Advancing the bioassay ontology through integrated PK/PD and safety pharmacology representation",
+      "authors": [
+        "Joan Glenny-Pescov",
+        "Caty Chung",
+        "Nicolette Ross",
+        "Jiaming Hu",
+        "Michael Sinclair",
+        "Rabia Khurshid",
+        "Anneli Karlsson",
+        "Stephan C. Sch\u00fcrer"
+      ],
+      "journal": "Journal of Biomedical Semantics",
+      "pub_date": "2026-03-12",
+      "summary": "the latest release of the BioAssay Ontology (BAO) introduces major updates that expand its ability to describe and categorize assays related to pharmacokinetics. the update also incorporate biologically relevant target classes, including cytochrome P450 enzymes, solute carrier transporters, and uridine diphosphate-glucuronosyltransferase enzyme.",
+      "keywords": [
+        "BioAssay ontology",
+        "FAIR",
+        "Pharmacodynamics",
+        "Pharmacokinetics",
+        "Pharmacology",
+        "Drug screening"
+      ],
+      "relevance_score": 0.199
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41822971",
+      "title": "Multimodal MRI Reveals Cerebral and Vascular Amyloid\u2010Driven Myeloarchitectural Disorganization in a Mouse Model of Alzheimer's Disease",
+      "authors": [
+        "Syed\u00a0Salman Shahid",
+        "Xuan Li",
+        "Mario Dzemidzic",
+        "Erin\u00a0E. Jarvis",
+        "Yomna Takieldeen",
+        "Aibo Wang",
+        "Donna Wilcock",
+        "Yu\u2010Chien Wu"
+      ],
+      "journal": "Nmr in Biomedicine",
+      "pub_date": "2026-03-13",
+      "summary": "ABSTRACTAlzheimer's disease (AD) is a multifactorial neurodegenerative disorder. it involves complex interactions of cerebral and vascular amyloidbeta (A) accumulation, myelin disruption, lipid alterations, and cerebrovascular dysfunction. the early detection and differentiation of these interconnected pathologies remain challenging.",
+      "keywords": [
+        "Hedges",
+        "The",
+        "To",
+        "High",
+        "Tesla"
+      ],
+      "relevance_score": 0.1988
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "query": "mRNA vaccine adverse events pediatric",
+  "timestamp": "2026-03-26T16:23:26.311310",
+  "model": "t5-small",
+  "num_results": 3,
+  "avg_rouge": {
+    "rouge1": 0.391,
+    "rouge2": 0.3476,
+    "rougeL": 0.3625
+  },
+  "articles": [
+    {
+      "pmc_id": "",
+      "pmid": "41848549",
+      "title": "Hematologic adverse events following COVID-19 vaccination and revaccination in persons aged 12 and above: A Canadian Immunization Research Network study",
+      "authors": [
+        "Michael Smolinski",
+        "Jo Lin Chew",
+        "Cora Constantinescu",
+        "C. Arianne Buchan",
+        "Catherine Burton",
+        "Alex Carignan",
+        "Lana A. Castellucci",
+        "Sneha Suresh",
+        "Athena McConnell",
+        "Shaun K. Morris",
+        "Monika Naus",
+        "Jeffrey M. Pernica",
+        "Anne Pham-Huy",
+        "Pierre-Philippe Piche-Renaud",
+        "Manish Sadarangani",
+        "Karina A. Top",
+        "Juthaporn Cowan"
+      ],
+      "journal": "Human Vaccines & Immunotherapeutics",
+      "pub_date": "2026-03-18",
+      "summary": "Study characterized hematologic AEFIs in patients assessed by SIC network physicians from January 2021 to February 2023. Participants were followed for recurrence after revaccination with an mRNA vaccine, including the two patients with TTS.",
+      "keywords": [
+        "COVID-19 vaccine",
+        "adverse events",
+        "hematologic",
+        "revaccination",
+        "vaccine safety"
+      ],
+      "relevance_score": 0.4991,
+      "rouge_scores": {
+        "rouge1": 0.2709,
+        "rouge2": 0.241,
+        "rougeL": 0.2709
+      }
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41884825",
+      "title": "RSV vaccine development: advances and fusion protein-focused strategies",
+      "authors": [
+        "Wang Xu",
+        "Revansiddha H. Katte",
+        "Maolin Lu"
+      ],
+      "journal": "Frontiers in Immunology",
+      "pub_date": "2026-02-25",
+      "summary": "Respiratory syncytial virus (RSV) is a leading cause of acute lower respiratory tract infections. It can progress to severe pulmonary disease in these vulnerable populations, frequently necessitating hospitalization. This review begins with RSV molecular virology, summarises the evolution of prophylactic antibody, and revisits lessons from past vaccine failures.",
+      "keywords": [
+        "fusion protein",
+        "monoclonal antibodies",
+        "prophylaxis",
+        "respiratory syncytial virus",
+        "RSV",
+        "vaccines"
+      ],
+      "relevance_score": 0.4541,
+      "rouge_scores": {
+        "rouge1": 0.4352,
+        "rouge2": 0.4019,
+        "rougeL": 0.4352
+      }
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41868141",
+      "title": "Respiratory enterovirus D68: virology, clinical surveillance, host-pathogen interactions, and therapeutic prospects",
+      "authors": [
+        "Yanshan Gui",
+        "Bing Han",
+        "Jialong Wei",
+        "Danlei Sun",
+        "Laixian Zhou",
+        "Shuchen Yuan",
+        "Wenzhan Xie",
+        "Hui Feng"
+      ],
+      "journal": "Frontiers in Cellular and Infection Microbiology",
+      "pub_date": "2026-03-05",
+      "summary": "Enterovirus D68 (EV-D68) has exhibited a biennial outbreak pattern across multiple regions worldwide. The virus is resembling human rhinoviruses, which causes sporadic outbreaks of mild, self-limiting respiratory infections mainly in children. However, clinical detection remains challenging, and there are no FDA-approved vaccines or antiviral treatments available. This review intends to examine the initiatives undertaken for clinical surveillance of EV.",
+      "keywords": [
+        "antivirals",
+        "clinical surveillance",
+        "escape",
+        "immune response",
+        "neurotropic enterovirus"
+      ],
+      "relevance_score": 0.4235,
+      "rouge_scores": {
+        "rouge1": 0.4669,
+        "rouge2": 0.4,
+        "rougeL": 0.3813
+      }
+    }
+  ]
+}

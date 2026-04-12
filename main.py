@@ -77,28 +77,40 @@ def _build_index(articles: list, client: chromadb.Client) -> tuple:
 
 
 def _format_report(report: dict) -> str:
+    avg = report.get("avg_rouge", {})
+    avg_str = ""
+    if avg:
+        avg_str = f"  |  ROUGE-1: {avg.get('rouge1', 0):.3f}  ROUGE-L: {avg.get('rougeL', 0):.3f}"
+
     lines = [
         "",
         "=" * 70,
         f"Query: {report['query']}",
-        f"Generated: {report['timestamp']}  |  Results: {report['num_results']}",
+        f"Generated: {report['timestamp']}  |  Results: {report['num_results']}{avg_str}",
+        f"Model: {report.get('model', 'unknown')}",
         "=" * 70,
     ]
     for i, art in enumerate(report["articles"], 1):
+        rouge = art.get("rouge_scores", {})
+        rouge_str = ""
+        if rouge:
+            rouge_str = f"R1={rouge.get('rouge1', 0):.3f} R2={rouge.get('rouge2', 0):.3f} RL={rouge.get('rougeL', 0):.3f}"
+
         lines.extend([
             "",
             f"--- Article {i} ---",
-            f"Title:   {art.get('title', '')}",
-            f"ID:      {art.get('pmc_id', '')}  |  PMID: {art.get('pmid', '')}",
-            f"Journal: {art.get('journal', '')}  |  Date: {art.get('pub_date', '')}",
-            f"Score:   {art.get('relevance_score')}",
-            f"Summary: {art.get('summary', '')}",
+            f"Title:    {art.get('title', '')}",
+            f"ID:       {art.get('pmc_id', '')}  |  PMID: {art.get('pmid', '')}",
+            f"Journal:  {art.get('journal', '')}  |  Date: {art.get('pub_date', '')}",
+            f"Score:    {art.get('relevance_score')}",
+            f"ROUGE:    {rouge_str}",
+            f"Summary:  {art.get('summary', '')}",
             f"Keywords: {', '.join(art.get('keywords', []))}",
         ])
     return "\n".join(lines)
 
 
-def run_pipeline(query: str, k: int, pool_size: int) -> dict:
+def run_pipeline(query: str, k: int, pool_size: int, model_name: str = "t5-small") -> dict:
     """Run full pipeline for one query. Returns report dict."""
 
     # 1. Search
@@ -146,30 +158,43 @@ def run_pipeline(query: str, k: int, pool_size: int) -> dict:
     s.stop()
 
     # 6. Summarize
-    s = Spinner("Generating summaries with T5")
+    model_label = model_name.split("/")[-1]
+    s = Spinner(f"Generating summaries with {model_label}")
     s.start()
-    summarizer = SummarizerAgent()
+    summarizer = SummarizerAgent(model_name=model_name)
     summarized = summarizer.summarize_batch(results)
     s.stop()
+
+    article_entries = []
+    for a in summarized:
+        article_entries.append({
+            "pmc_id": a.get("pmc_id"),
+            "pmid": a.get("pmid"),
+            "title": a.get("title"),
+            "authors": a.get("authors", []),
+            "journal": a.get("journal"),
+            "pub_date": a.get("pub_date"),
+            "summary": a.get("summary"),
+            "keywords": a.get("extracted_keywords", a.get("keywords", [])),
+            "relevance_score": a.get("relevance_score"),
+            "rouge_scores": a.get("rouge_scores", {}),
+        })
+
+    # average ROUGE across all articles
+    avg_rouge = {}
+    rouge_articles = [e for e in article_entries if e.get("rouge_scores")]
+    if rouge_articles:
+        for key in ("rouge1", "rouge2", "rougeL"):
+            vals = [e["rouge_scores"].get(key, 0) for e in rouge_articles]
+            avg_rouge[key] = round(sum(vals) / len(vals), 4)
 
     report = {
         "query": query,
         "timestamp": datetime.now().isoformat(),
+        "model": model_name,
         "num_results": len(summarized),
-        "articles": [
-            {
-                "pmc_id": a.get("pmc_id"),
-                "pmid": a.get("pmid"),
-                "title": a.get("title"),
-                "authors": a.get("authors", []),
-                "journal": a.get("journal"),
-                "pub_date": a.get("pub_date"),
-                "summary": a.get("summary"),
-                "keywords": a.get("extracted_keywords", a.get("keywords", [])),
-                "relevance_score": a.get("relevance_score"),
-            }
-            for a in summarized
-        ],
+        "avg_rouge": avg_rouge,
+        "articles": article_entries,
     }
     return report
 
@@ -194,8 +219,11 @@ def main():
         pool_str = input("Size of article pool to search (default 50): ").strip()
         pool_size = int(pool_str) if pool_str else 50
 
+        model_choice = input("Model: (1) t5-small [fast] or (2) bart-large-cnn [better]: ").strip()
+        model_name = "facebook/bart-large-cnn" if model_choice == "2" else "t5-small"
+
         try:
-            report = run_pipeline(query, k, pool_size)
+            report = run_pipeline(query, k, pool_size, model_name=model_name)
         except Exception as e:
             print(f"Error: {e}")
             print("Try again or check your network.")

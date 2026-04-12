@@ -1,0 +1,145 @@
+{
+  "query": "Adverse events with mRNA vaccines in pediatrics",
+  "timestamp": "2026-03-25T22:09:32.675241",
+  "num_results": 5,
+  "articles": [
+    {
+      "pmc_id": "",
+      "pmid": "41808349",
+      "title": "Respiratory syncytial virus mRNA vaccine-induced immunity and protection against subgroups A and B in mice",
+      "authors": [
+        "Sujin Lee",
+        "Jack Yoon",
+        "Savannah Shooter",
+        "David S Pak",
+        "Binh Ha",
+        "Christina A Rostad",
+        "Larry J Anderson",
+        "Raymond F Schinazi",
+        "Baek Kim"
+      ],
+      "journal": "ImmunoHorizons",
+      "pub_date": "2026-03-00",
+      "summary": "AbstractRespiratory syncytial virus (RSV) is a major global cause of severe lower respiratory tract infections in infants and older adults. mRNA vaccine encoding prefusion F protein-based vaccines achieved 70% efficacy, and moderna\u2019s new vaccine for older adult populations further underscores the potential of rSV-a and resultaneous titers.",
+      "keywords": [
+        "mRNA vaccine",
+        "neutralizing antibody titers",
+        "pre-clinical animal model",
+        "respiratory syncytial virus (RSV)",
+        "T cell immunity"
+      ],
+      "relevance_score": 0.4943
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41810634",
+      "title": "Signals of disproportionate reporting of events supposedly attributable to COVID-19 vaccines in children and adolescents: case-non-case study, Brazil, 2022",
+      "authors": [
+        "Roberta Mendes Abreu Silva",
+        "Martha Elizabeth Brasil da N\u00f3brega",
+        "Jadher Percio",
+        "Adriano Ferreira Martins",
+        "Silvio Luis Rodrigues Almeida",
+        "Victor Bertollo Gomes Porto"
+      ],
+      "journal": "Epidemiologia e Servi\u00e7os de Sa\u00fade : Revista do Sistema Unico de Sa\u00fade do Brasil",
+      "pub_date": "2026-03-06",
+      "summary": "in 2022, there were 225,693 reports, of which 26,128 were vaccine-event pairs in children and adolescents, mostly non-serious events. we traced 39 signals of disproportionate reporting for the Sinovac vaccine and 53 signals for Pfizer-BioNTech, including signals not described in the package insert.",
+      "keywords": [
+        "Vaccines",
+        "Pharmacovigilance",
+        "Adverse Event",
+        "COVID-19 Vaccines",
+        "Data Mining.",
+        "Vacunas",
+        "Farmacovigilancia",
+        "Eventos adversos",
+        "Vacunas contra la covid-19",
+        "Miner\u00eda de Datos."
+      ],
+      "relevance_score": 0.4943
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41848549",
+      "title": "Hematologic adverse events following COVID-19 vaccination and revaccination in persons aged 12 and above: A Canadian Immunization Research Network study",
+      "authors": [
+        "Michael Smolinski",
+        "Jo Lin Chew",
+        "Cora Constantinescu",
+        "C. Arianne Buchan",
+        "Catherine Burton",
+        "Alex Carignan",
+        "Lana A. Castellucci",
+        "Sneha Suresh",
+        "Athena McConnell",
+        "Shaun K. Morris",
+        "Monika Naus",
+        "Jeffrey M. Pernica",
+        "Anne Pham-Huy",
+        "Pierre-Philippe Piche-Renaud",
+        "Manish Sadarangani",
+        "Karina A. Top",
+        "Juthaporn Cowan"
+      ],
+      "journal": "Human Vaccines & Immunotherapeutics",
+      "pub_date": "2026-03-18",
+      "summary": "study characterized hematologic AEFIs in patients assessed by SIC network physicians from January 2021 to February 2023. participants were followed for recurrence after revaccination with an mRNA vaccine, including the two patients with TTS.",
+      "keywords": [
+        "COVID-19 vaccine",
+        "adverse events",
+        "hematologic",
+        "revaccination",
+        "vaccine safety"
+      ],
+      "relevance_score": 0.4878
+    },
+    {
+      "pmc_id": "",
+      "pmid": "",
+      "title": "RSV vaccine development: advances and fusion protein-focused strategies",
+      "authors": [
+        "Wang Xu",
+        "Revansiddha H. Katte",
+        "Maolin Lu"
+      ],
+      "journal": "Frontiers in Immunology",
+      "pub_date": "2026-02-25",
+      "summary": "Respiratory syncytial virus (RSV) is a leading cause of acute lower respiratory tract infections. it can progress to severe pulmonary disease in these vulnerable populations, frequently necessitating hospitalization. this review begins with RSV molecular virology, summarises the evolution of prophylactic antibody, and revisits lessons from past vaccine failures.",
+      "keywords": [
+        "fusion protein",
+        "monoclonal antibodies",
+        "prophylaxis",
+        "respiratory syncytial virus",
+        "RSV",
+        "vaccines"
+      ],
+      "relevance_score": 0.4516
+    },
+    {
+      "pmc_id": "",
+      "pmid": "41805639",
+      "title": "Safety, immunogenicity, and effectiveness of the MAV/06 varicella vaccine: A comprehensive review of a new strain vaccine",
+      "authors": [
+        "Younchul Shin",
+        "Hyunji Ryu",
+        "Gwanglok Kim",
+        "Shinha Yang",
+        "Jaewoo Lee",
+        "BongKyoo Choi"
+      ],
+      "journal": "Human Vaccines & Immunotherapeutics",
+      "pub_date": "2026-03-10",
+      "summary": "ABSTRACTMost of licensed varicella vaccines are based on the Oka strain. the MAV/06 strain vaccine was exclusively developed by GC Biopharma Corp.",
+      "keywords": [
+        "Varicella vaccines",
+        "MAV/06 strain",
+        "cost-effective",
+        "safety",
+        "immunogenicity",
+        "effectiveness"
+      ],
+      "relevance_score": 0.4219
+    }
+  ]
+}
